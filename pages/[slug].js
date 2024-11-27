@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Head from "next/head"
-import Header from "./Header"
+import Header from "./components/Header"
+import Tags from "./components/Tags"
 
 export default function Layout({ children }) {
 	return (

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import Layout from "../../components/Layout"
+import Layout from "../components/Layout"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
@@ -29,7 +29,7 @@ export default function Pages({ pages }) {
 }
 
 export async function getStaticProps() {
-	const pagesDirectory = path.join(process.cwd(), "pages/content")
+	const pagesDirectory = path.join(process.cwd(), "content")
 	const filenames = fs.readdirSync(pagesDirectory)
 
 	const pages = filenames.map((filename) => {

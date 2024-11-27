@@ -5,8 +5,10 @@ export default function Home() {
 		<Layout>
 			<div className="h-screen-90 flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900">
 				<div className="text-center text-white">
-					<h1 className="text-6xl font-bold mb-4">Welcome to My Site</h1>
-					<p className="text-slate-200 text-xl mb-8 font-newsreader">A simple website with markdown pages</p>
+					<h1 className="text-6xl font-bold mb-4">Technical Notes</h1>
+					<p className="text-slate-200 text-xl mb-8 font-newsreader">
+						This is where I write about <span className="italic">everything</span>.
+					</p>
 					<a
 						href="/pages"
 						className="bg-white text-slate-800 px-6 py-3 rounded-lg font-semibold
