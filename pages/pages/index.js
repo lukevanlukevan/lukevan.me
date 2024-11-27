@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import Layout from "../components/Layout"
+import Layout from "@/components/Layout"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
@@ -19,7 +19,7 @@ export default function Pages({ pages }) {
 							border border-slate-200"
 						>
 							<h2 className="text-2xl font-semibold mb-2 text-slate-800">{page.title}</h2>
-							<p className="text-slate-600 font-newsreader">{page.excerpt}</p>
+							<p className="text-slate-600 font-serif">{page.excerpt}</p>
 						</a>
 					))}
 				</div>
@@ -29,7 +29,7 @@ export default function Pages({ pages }) {
 }
 
 export async function getStaticProps() {
-	const pagesDirectory = path.join(process.cwd(), "content")
+	const pagesDirectory = path.join(process.cwd(), "pages", "content")
 	const filenames = fs.readdirSync(pagesDirectory)
 
 	const pages = filenames.map((filename) => {
@@ -51,3 +51,4 @@ export async function getStaticProps() {
 		},
 	}
 }
+

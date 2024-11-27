@@ -6,10 +6,11 @@ export default function Tags({ tags }) {
 	return (
 		<div className="flex gap-2 flex-wrap">
 			{tags.map((tag) => (
-				<Link key={tag} href={`/tags/${tag}`} className="text-sm px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full transition-colors">
+				<Link key={tag} href={`/tags/${tag}`} className="text-sm text-white px-3 py-1 bg-accent rounded-full transition-colors">
 					#{tag}
 				</Link>
 			))}
 		</div>
 	)
 }
+

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-	.font-newsreader {
-		font-family: "Newsreader", serif;
+	.font-serif {
+		font-family: "serif", serif;
 	}
 	.font-inter {
 		font-family: "Inter", sans-serif;
@@ -19,3 +19,4 @@
     border border-slate-200;
 	}
 }
+

@@ -1,6 +1,6 @@
-import Layout from "../components/Layout"
+import Layout from "@/components/Layout"
 import Link from "next/link"
-import { getAllPosts } from "../lib/api"
+import { getAllPosts } from "@/lib/api"
 
 export default function TagPage({ posts, tag }) {
 	return (
@@ -40,3 +40,4 @@ export async function getStaticProps({ params }) {
 		},
 	}
 }
+
