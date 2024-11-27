@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.font-newsreader {
+		font-family: "Newsreader", serif;
+	}
+	.font-inter {
+		font-family: "Inter", sans-serif;
+	}
+	.big-title {
+		@apply text-4xl font-bold text-slate-800 mb-8;
+	}
+
+	.page-card {
+		@apply p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg shadow-sm
+    hover:shadow-md hover:from-white hover:to-slate-50 transition-all duration-300
+    border border-slate-200;
+	}
+}
